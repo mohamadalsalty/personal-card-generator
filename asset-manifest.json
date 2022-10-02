@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/personal-card-generator/static/css/main.a5c0d590.css",
+    "main.js": "/personal-card-generator/static/js/main.323968dd.js",
+    "index.html": "/personal-card-generator/index.html",
+    "main.a5c0d590.css.map": "/personal-card-generator/static/css/main.a5c0d590.css.map",
+    "main.323968dd.js.map": "/personal-card-generator/static/js/main.323968dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5c0d590.css",
+    "static/js/main.323968dd.js"
+  ]
+}
