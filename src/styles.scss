@@ -1,0 +1,164 @@
+$mainTextColor : #fff;
+
+$photoWidth :150px;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &>form {
+        display: flex;
+        gap: 1px;
+        flex-direction: column;
+        width: 700px;
+        gap: 10px;
+
+        &>.col-2>.background-color {
+            text-align: left;
+        }
+
+        &>.col-2>input,
+        &>textarea {
+            border: solid 0.1px rgb(171, 169, 169);
+            outline: none;
+            text-align: center;
+        }
+
+        &>.col-3>.main-text-color,
+        &>.col-3>.background-color,
+        &>.col-3>.main-link-color {
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            input[type="color" i] {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: none;
+                border-color: transparent;
+                -webkit-appearance: none;
+                overflow: hidden;
+                border: solid 1px rgb(204, 196, 196);
+            }
+        }
+
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        input[type="color"]::-webkit-color-swatch {
+            border: none;
+        }
+
+        &>textarea {
+            text-align: left;
+        }
+
+        &>textarea {
+            height: 100px;
+        }
+
+
+        &>.col-2 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        &>.col-3 {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+
+    &>.card {
+        border: solid 0.1px rgb(171, 169, 169);
+        height: 130px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        &>.info {
+            width: 100%;
+            overflow: hidden;
+
+            &>.name {
+                text-align: left;
+                padding-top: 20px;
+                font-size: 20px;
+                width: 100%;
+                font-weight: bold;
+                text-transform: uppercase;
+                overflow: hidden;
+                width: 100%;
+
+                &.with-image {
+                    padding-left: 160px;
+                }
+            }
+
+
+            &>.details {
+                text-align: left;
+
+                &.with-image {
+                    padding-left: 160px;
+                }
+            }
+        }
+
+
+
+
+        &>.photo {
+            position: relative;
+
+            &>img {
+                position: absolute;
+                width: $photoWidth;
+                height: 130px;
+                object-fit: fill;
+            }
+
+            &>.social-media-icons {
+                width: $photoWidth;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                color: $mainTextColor;
+                overflow: hidden;
+
+                &>.facebook>a,
+                &>.twitter>a {
+                    color: black !important;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2px;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $mainTextColor;
+
+                    &>span {
+                        font-weight: bold;
+                        color: $mainTextColor;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
